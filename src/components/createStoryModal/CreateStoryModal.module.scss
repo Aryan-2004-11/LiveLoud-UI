@@ -1,0 +1,134 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.338);
+  z-index: 4444;
+  .container {
+    position: relative;
+    border-radius: 15px;
+    width: 500px;
+    height: 80%;
+    background-color: #313131;
+
+    textarea {
+      outline: none;
+      background: none;
+      position: fixed;
+      resize: none;
+      border: none;
+      color: #fff;
+      font-size: 23px;
+      z-index: 4444;
+      overflow: hidden;
+    }
+
+    .storyContent {
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-color: #313131;
+      border-radius: 15px;
+      height: 100%;
+      textarea {
+        z-index: 4444;
+        position: fixed;
+        color: white;
+        font-size: 23px;
+      }
+      img {
+        object-fit: cover;
+        height: 70%;
+        width: 100%;
+      }
+    }
+    .storyResultWrapper {
+      position: absolute;
+      left: -5000px;
+      .storyResult {
+        position: relative;
+        background-image: #313131;
+        border-radius: 15px;
+        height: 100%;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+        textarea {
+          position: absolute;
+          color: white;
+          font-size: 23px;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      z-index: 4444;
+      padding: 20px 20px;
+      .close {
+        padding: 15px;
+        background-color: rgba(38, 38, 38, 0.187);
+        border-radius: 50%;
+        cursor: pointer;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          color: #fff;
+        }
+      }
+      .imageUpload {
+        padding: 15px;
+        background-color: rgba(38, 38, 38, 0.187);
+        border-radius: 50%;
+        cursor: pointer;
+
+        label {
+          cursor: pointer;
+
+          svg {
+            width: 30px;
+            height: 30px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .publish {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      background-color: #1877f2;
+      width: 120px;
+      height: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      span {
+        color: #fff;
+      }
+
+      &:hover {
+        background-color: #1876f2b5;
+      }
+    }
+  }
+}

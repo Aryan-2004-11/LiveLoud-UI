@@ -1,0 +1,14 @@
+
+.bg-custom {
+    background-color: #1877f2;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+            &:hover {
+              background-color: #1876f2e7;
+  }
+
+}
+  

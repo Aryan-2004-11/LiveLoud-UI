@@ -1,0 +1,139 @@
+.root {
+  display: flex;
+  height: 100px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+
+  @media (max-width: 910px) {
+    .container {
+      padding: 20px !important;
+      gap: 20px;
+    }
+    .create {
+      display: none !important;
+    }
+    .avatar {
+      display: none;
+    }
+  }
+  // @media (max-width: 740px) {
+  //   .signIn {
+  //     span {
+  //       display: none;
+  //     }
+  //   }
+  //   .signUp {
+  //     span {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  @media (max-width: 500px) {
+    height: auto;
+    .container {
+      flex-direction: column;
+    }
+    .logo {
+      a {
+        gap: 10px !important;
+      }
+      svg {
+        width: 35px !important;
+        height: 35px !important;
+      }
+      span {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    .logo {
+      a {
+        text-decoration: none;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        display: flex;
+
+        svg {
+          border-radius: 15px;
+          width: 50px;
+          height: 50px;
+        }
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          color: #23446e;
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .create {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 12px;
+        color: white;
+        background-color: #1877f2;
+        gap: 10px;
+        cursor: pointer;
+      }
+      .avatar {
+        cursor: pointer;
+        img {
+          border-radius: 15px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .signIn {
+      a {
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        color: #23446e;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.8;
+        }
+        svg {
+          font-size: 20px;
+        }
+        span {
+          font-size: 17px;
+          font-weight: 400;
+        }
+      }
+    }
+    .signUp {
+      a {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 12px;
+        color: white;
+        background-color: #1877f2;
+        gap: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .bg-custom-blue {
+      background-color: rgba(59, 130, 246, 0.5);
+    }
+  }
+}
